@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabla</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<div class="container table-responsive">
+  <table class="table caption-top table-striped text-center mt-2 shadow">
+    <tr style="background-color: rgb(0, 200, 255);">
+      <th style="color: aliceblue;">Versión</th>
+      <th style="color: aliceblue;">Fecha</th>
+      <th style="color: aliceblue;">Resumen</th>
+      <th style="color: aliceblue;">Archivos</th>
+      <th style="color: aliceblue;">Detalles</th>
+      <th style="color: aliceblue;">Configuración</th>
+    </tr>
+    <tr>
+      <td id="version1">1.6.1.6</td>
+      <td>02/01/22</td>
+      <td class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore perspiciatis illum maiores
+        est magni.
+        Dolor eius magni incidunt cupiditate, voluptatum excepturi possimus ipsum temporibus numquam, enim dolorem iure
+        illo tenetur.</td>
+      <td><button class="btn btn-outline-primary btn-sm rounded-3" href="#" role="button" id="arc1">Ver
+          Archivos</button></td>
+      <td><button class="btn btn-outline-primary btn-sm rounded-3" href="#" role="button" id="det1">Ver Detalles</button></td>
+      <td><button class="btn btn-outline-primary btn-sm rounded-3" href="#" role="button" id="con1">Ver Conf.</button></td>
+    </tr>
+    <tr>
+      <td id="version2">1.6.2.0</td>
+      <td>17/05/23</td>
+      <td class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsam cupiditate, obcaecati,
+        iusto iure quos unde debitis inventore quaerat sapiente qui vel dolore magnam, eum quam in impedit ab molestiae!
+      </td>
+      <td><button class="btn btn-outline-primary btn-sm rounded-3" href="#" role="button" id="arc2">Ver
+          Archivos</button></td>
+      <td><button class="btn btn-outline-primary btn-sm rounded-3" href="#" role="button" id="det2">Ver Detalles</button></td>
+      <td><button class="btn btn-outline-primary btn-sm rounded-3" href="#" role="button" id="con2">Ver Conf.</button></td>
+    </tr>
+  </table>
+
+  <div class="card shadow collapse mt-5" id="card">
+    <div class="collapse" id="archivo">
+      <h5 class="card-header" style="font-weight: bold; font-size: 16px; background-color: rgb(0, 200, 255); color: aliceblue;" id="print"></h5>
+      <div class="card-body">
+        <h5 class="card-title">Archivos</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="">Archivo 1</a></li>
+          <li class="list-group-item"><a href="">Archivo 2</a></li>
+          <li class="list-group-item"><a href="">Archivo 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="collapse" id="detalle">
+      <h5 class="card-header" style="font-weight: bold; font-size: 16px; color: rgb(0, 200, 255); color: aliceblue;" id="print2"></h5>
+      <div class="card-body">
+        <h5 class="card-title" style="color: aliceblue;">Detalles</h5>
+        <ul class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis</li>
+          <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero tempora sunt</li>
+          <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non molestiae quam voluptatibus</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="collapse" id="config">
+      <h5 class="card-header" style="font-weight: bold; font-size: 16px; background-color: rgb(0, 200, 255); color: aliceblue;" id="print3"></h5>
+      <div class="card-body">
+        <h5 class="card-title">Configuraciones</h5>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                gatsby-node.js
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                src/colors.css.ts
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                src/components/landingCard.js
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="code.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</html>
